@@ -30,7 +30,7 @@ Backup your **~/.vimrc** and/or your **~/.vim** dir.
 Upgrade
 =======
 
-    git fetch origin && git rebase origin/master
+    git pull
     git submodule init
     git submodule update
 
