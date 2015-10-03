@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 echo
 echo " Making ~/.vide dirs and installing pathogen ..."
 mkdir -p ~/.vide/autoload ~/.vide/bundle
