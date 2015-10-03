@@ -22,8 +22,10 @@ Install
 =========
 Backup your **~/.vimrc** and/or your **~/.vim** dir.
 
-    cd ~/.vim
+    mkdir ~/.vide
+    cd ~/.vide
     git clone git://github.com/PacoPuerta/vide/ .
+    ln -s ~/.vide ~/.vim
     ln -s ~/.vide/.vimrc ~/.vimrc
     git submodule init
     git submodule update
