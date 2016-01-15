@@ -86,6 +86,12 @@ endif
 " Vim-trailing-whitespaces
 nnoremap <F6> :FixWhitespace<cr>
 
+" Vim-easymotion
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+
 " Syntatics
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}

@@ -71,5 +71,6 @@ All of the project features are part of different plugins:
 * https://github.com/bling/vim-airline
 * https://github.com/jeetsukumaran/vim-buffergator
 * https://github.com/bronson/vim-trailing-whitespace
+* https://github.com/easymotion/vim-easymotion
 * https://tpo.pe/pathogen.vim
 
