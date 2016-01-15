@@ -24,6 +24,7 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set smartindent
+" Map for global auto indentation
 map <F7> mzgg=G`z
 
 " When you start searching text with /, search is performed at every
@@ -59,17 +60,16 @@ map <C-e> :NERDTreeToggle<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" Taglist
-"map <C-l> :TlistToggle<CR>
-nnoremap <F4> :TagbarToggle<CR>
-let Tagbar_Use_Right_Window = 1
-let Tagbar_Exit_OnlyWindow = 1
-let Tagbar_WinWidth = 40
-
 " Buffergator
 nnoremap <F3> :BuffergatorToggle<cr>
 let g:buffergator_viewport_split_policy = 'T'
 let g:buffergator_hsplit_size = 7
+
+" Tagbar
+nnoremap <F4> :TagbarToggle<CR>
+let Tagbar_Use_Right_Window = 1
+let Tagbar_Exit_OnlyWindow = 1
+let Tagbar_WinWidth = 40
 
 " Undotree
 nnoremap <F5> :UndotreeToggle<cr>
@@ -82,6 +82,9 @@ endif
 if !exists('g:undotree_WindowLayout')
     let g:undotree_WindowLayout = 4
 endif
+
+" Vim-trailing-whitespaces
+nnoremap <F6> :FixWhitespace<cr>
 
 " Syntatics
 set statusline+=%#warningmsg#
