@@ -65,7 +65,7 @@ All of the project features are part of different plugins:
 * https://github.com/scrooloose/nerdtree
 * https://github.com/ervandew/supertab
 * https://github.com/scrooloose/syntastic
-* https://github.com/vim-scripts/taglist.vim
+* https://github.com/majutsushi/tagbar
 * https://github.com/mbbill/undotree
 * https://github.com/vim-scripts/vcscommand.vim
 * https://github.com/bling/vim-airline

@@ -61,10 +61,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " Taglist
 "map <C-l> :TlistToggle<CR>
-nnoremap <F4> :TlistToggle<CR>
-let Tlist_Use_Right_Window = 1
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_WinWidth = 40
+nnoremap <F4> :TagbarToggle<CR>
+let Tagbar_Use_Right_Window = 1
+let Tagbar_Exit_OnlyWindow = 1
+let Tagbar_WinWidth = 40
 
 " Buffergator
 nnoremap <F3> :BuffergatorToggle<cr>
@@ -76,7 +76,7 @@ nnoremap <F5> :UndotreeToggle<cr>
 if has("persistent_undo")
     set undodir=/tmp/
     set undofile
-    set backup
+    "set backup
     set undoreload=5000
 endif
 if !exists('g:undotree_WindowLayout')
