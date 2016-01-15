@@ -73,11 +73,12 @@ let g:buffergator_hsplit_size = 7
 
 " Undotree
 nnoremap <F5> :UndotreeToggle<cr>
-"if has("persistent_undo")
-"    set undodir=/tmp/
-"    set undofile
-"    "set backup
-"endif
+if has("persistent_undo")
+    set undodir=/tmp/
+    set undofile
+    set backup
+    set undoreload=5000
+endif
 if !exists('g:undotree_WindowLayout')
     let g:undotree_WindowLayout = 4
 endif
