@@ -1,6 +1,8 @@
 # Vide
+Vide
+========
 
-Vi(m)ide for bash shell
+V(im)ide for bash shell
 ========
 
 Features
@@ -45,8 +47,8 @@ Usage
 * **Fuzzy search**: **\<C-p\>**, select the file and [select file](#selecting-files)
 * **Git/subversion**: **\<,c[...]\>**, see full commands options with :map
 * **Bash support**: **\<;[...]\>**, see full commands options with :map
+* **Fix whitespaces**: **\<F6\>**
 * **Auto indent**: **\<F7\>**
-* **Fix whitespaces**: **:FixWhitespace>**
 
 Vim quick info
 ==============
