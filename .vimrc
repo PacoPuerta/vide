@@ -62,10 +62,12 @@ let g:indentLine_color_term = 239
 " NerdTree
 map <C-e> :NERDTreeToggle<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 
 " Buffergator
 nnoremap <F3> :BuffergatorToggle<cr>
+nnoremap <C-b> :BuffergatorMruCycleNext<cr>
 let g:buffergator_viewport_split_policy = 'T'
 let g:buffergator_hsplit_size = 7
 
