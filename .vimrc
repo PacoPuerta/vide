@@ -46,10 +46,10 @@ highlight VisualNOS ctermbg=3 ctermfg=Black
 """""" BUNDLES SETTINGS """"""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""
 " Smart way to move between panes
-map <C-up> <C-w><up>
-map <C-down> <C-w><down>
-map <C-left> <C-w><left>
-map <C-right> <C-w><right>
+#map <C-up> <C-w><up>
+#map <C-down> <C-w><down>
+#map <C-left> <C-w><left>
+#map <C-right> <C-w><right>
 
 
 " bash-support
