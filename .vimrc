@@ -51,6 +51,8 @@ highlight VisualNOS ctermbg=3 ctermfg=Black
 "map <C-left> <C-w><left>
 "map <C-right> <C-w><right>
 
+" closu current buffer
+nnoremap <C-w> :bd <cr>
 
 " bash-support
 let g:BASH_InsertFileHeader = 'no'
