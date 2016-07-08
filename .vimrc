@@ -25,7 +25,7 @@ set expandtab
 set autoindent
 set smartindent
 " Map for global auto indentation
-map <F7> mzgg=G`z
+map <F10> mzgg=G`z
 
 " When you start searching text with /, search is performed at every
 " new character insertion.
@@ -51,8 +51,8 @@ highlight VisualNOS ctermbg=3 ctermfg=Black
 "map <C-left> <C-w><left>
 "map <C-right> <C-w><right>
 
-" closu current buffer
-nnoremap <C-w> :bd <cr>
+" close current buffer
+nnoremap <C-c> :bd <cr>
 
 " bash-support
 let g:BASH_InsertFileHeader = 'no'
@@ -92,7 +92,7 @@ if !exists('g:undotree_WindowLayout')
 endif
 
 " Vim-trailing-whitespaces
-nnoremap <F6> :FixWhitespace<cr>
+nnoremap <F9> :FixWhitespace<cr>
 
 " Vim-easymotion
 map  / <Plug>(easymotion-sn)
@@ -108,6 +108,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+nnoremap <F6> :SyntasticToggleMode<CR>
 
 " Airline
 let g:airline#extensions#tabline#fnamemod = ':t'
